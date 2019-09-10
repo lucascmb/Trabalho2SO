@@ -4,6 +4,8 @@
 import operator
 import copy
 
+################################## --- Funções auxiliares --- ##################################
+
 # Monitora a existência de tarefas pendentes.
 def monitor(pending_jobs):
 	pending = 0
@@ -95,7 +97,7 @@ def printResult(alg_name, t_exec, t_waiting, cont_switch, jobs):
     print("Tempo total: %d" % (jobs))
     print("\n##############################\n")
 
-########################################################################################################
+############################# --- Algoritmos de Escalonamento --- ##############################
 
 # Algoritmo First Come First Served.
 def FCFS(jobs):
@@ -305,7 +307,7 @@ def PRIOd(jobs):
 
 	printResult("PRIOd", t_exec_avg, t_waiting_avg, context_switch, current)
 
-########################################################################################################
+##################################### --- Execuções --- ########################################
 
 print("\n##############################\n")
 
