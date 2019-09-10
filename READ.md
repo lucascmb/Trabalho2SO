@@ -1,0 +1,1 @@
+Utilize o g++ para compilar o programa.
